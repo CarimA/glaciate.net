@@ -1,0 +1,15 @@
+extends base.pug
+
+block content
+  section(class="articles")
+    ul
+      - var lastYear = undefined
+      each item in articles
+        if (lastYear !== item.date.getFullYear())
+          - lastYear = item.date.getFullYear()
+          h1= lastYear
+      
+        li
+          a(href='/article/' + item.slug)
+            span= item.prettyDate
+            p= item.title

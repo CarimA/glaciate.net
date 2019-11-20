@@ -1,0 +1,26 @@
+extends base.pug
+
+block content
+  div(class="title")
+    h1=article.title
+    |  • 
+    p(class="date") Posted on #{article.prettyDate}
+  div(class="content")!=article.content
+
+  if config.gitRepository
+    a(href=config.gitRepository + "/edit/master" + article.root) Suggest an Edit
+    br
+    br
+
+  if article.previous
+    a(href='/article/' + article.previous.slug) Newer Article: #{article.previous.title}
+    br
+
+  if article.next
+    a(href='/article/' + article.next.slug) Older Article: #{article.next.title}
+    br
+  
+  br
+  a(href='/') Back to glaciate.net
+  br
+  a(href='/article/') Back to more articles

@@ -1,0 +1,19 @@
+extends base.pug
+
+block content
+  section(class="articles")
+    h1 Recent Articles
+    ul
+      each item in articles.slice(0, 6)
+        li
+          a(href='/article/' + item.slug)
+            span= item.prettyDate
+            p= item.title
+      li
+        span
+        a(href="/article/", class="read-more") More articles ↠
+  
+  hr
+
+  section
+    != about

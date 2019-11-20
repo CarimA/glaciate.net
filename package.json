@@ -1,0 +1,32 @@
+{
+  "name": "frostkit",
+  "version": "1.0.0",
+  "description": "A simple one-page blog starter kit",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarimA/FrostKit.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Carim A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarimA/FrostKit/issues"
+  },
+  "homepage": "https://github.com/CarimA/FrostKit#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.16.4",
+    "express-force-https": "^1.0.0",
+    "fs-extra": "^7.0.1",
+    "less-middleware": "^3.1.0",
+    "parse-md": "^1.0.3",
+    "pug": "^2.0.3",
+    "showdown": "^1.9.0"
+  }
+}

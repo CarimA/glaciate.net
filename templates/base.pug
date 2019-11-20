@@ -1,0 +1,35 @@
+
+doctype html
+html(lang="en", dir="ltr")
+  head
+    title= config.name
+
+    meta(name="title", content=config.name)
+    meta(http-equiv="x-ua-compatible", content="ie-edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    meta(name="theme-color", content=config.mobileThemeColor)
+    meta(name="msapplication-navbutton-color", content=config.mobileThemeColor)
+    meta(name="apple-mobile-web-app-status-bar-style", content=config.mobileThemeColor)
+
+    link(href="https://fonts.googleapis.com/css?family=Livvic:200,400,700&display=swap", rel="stylesheet")
+    link(rel="stylesheet", href="/css/style.css")
+  
+  body
+    main
+      a(href="/")
+        h1(class="logo")
+          p glaciate
+          span .net
+      nav
+        ul
+          each item, index in config.navigation.header
+            li
+              a(href=item.url)
+                !=item.html
+            if (index < config.navigation.header.length - 1)
+              li  • 
+      hr
+      block content
+      hr
+      p= config.copyright

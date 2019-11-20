@@ -1,0 +1,4 @@
+node_modules
+dynamic
+package-lock.json
+static/css/style.css
