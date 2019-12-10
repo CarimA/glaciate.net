@@ -176,8 +176,18 @@ img {
   }
 }
 
-#twitch-embed {
+.twitch-embed-outside {
   overflow: hidden;
   height: 0;
   padding-top: 56.25%;
+  background: light-grey;
+  position: relative;
+}
+
+#twitch-embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
