@@ -15,15 +15,16 @@ block content
   
   hr
   
-  div(id='twitch-embed')
-  script(src='https://embed.twitch.tv/embed/v1.js')
-  script.
-    new Twitch.Embed('twitch-embed', {
-      width: '100%',
-      height: '100%',
-      layout: 'video',
-      channel: 'nitrixr'
-    });
+  div(class='twitch-embed-outside')
+    div(id='twitch-embed')
+    script(src='https://embed.twitch.tv/embed/v1.js')
+    script.
+      new Twitch.Embed('twitch-embed', {
+        width: '100%',
+        height: '100%',
+        layout: 'video',
+        channel: 'nitrixr'
+      });
   
   hr
 
