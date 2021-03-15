@@ -10,20 +10,12 @@ const config = {
   navigation: {
     header: [
       {
-        'url': 'https://discord.gg/ew2X8Sy',
-        'html': 'PhotoVs Discord'
-      },
-      {
-        'url': 'https://github.com/CarimA',
-        'html': 'GitHub'
+        'url': 'https://discord.gg/GCSjhTT',
+        'html': 'Photeus'
       },
       {
         'url': 'http://twitter.com/nitrixr',
         'html': 'Twitter'
-      },
-      {
-        'url': 'http://twitch.tv/nitrixr',
-        'html': 'Twitch'
       }
     ]
   }
