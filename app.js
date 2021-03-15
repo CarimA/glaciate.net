@@ -6,7 +6,7 @@ const config = {
   gitRepository: 'https://github.com/CarimA/glaciate.net',
   forceHttps: true,
   enableCompression: true,
-  copyright: 'Copyright © 2020 Carim A. All rights reserved. 🚀',
+  copyright: 'Copyright © 2021 Carim A. All rights reserved. 🚀',
   navigation: {
     header: [
       {
